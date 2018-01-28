@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import View from '../View';
 
 export default class RoundShape extends React.Component {
 
@@ -22,7 +23,7 @@ export default class RoundShape extends React.Component {
     const classes = ['round-shape', className].filter(c => c).join(' ');
 
     return (
-      <div className={classes} style={{ ...defaultStyles, ...style }} />
+      <View className={classes} style={{ ...defaultStyles, ...style }} />
     );
   }
 

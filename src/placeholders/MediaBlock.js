@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TextBlock from './TextBlock';
 import RoundShape from './RoundShape';
-
+import View from '../View';
 
 export default class MediaBlock extends React.Component {
 
@@ -19,13 +19,13 @@ export default class MediaBlock extends React.Component {
     const classes = ['media-block', className].filter(c => c).join(' ');
 
     return (
-      <div className={classes} style={{ ...style, display: 'flex' }}>
+      <View className={classes} style={{ ...style, display: 'flex' }}>
         <RoundShape
           color={color}
           style={{ minHeight: 55, width: 55, minWidth: 55, marginRight: 10 }}
         />
         <TextBlock color={color} rows={rows} />
-      </div>
+      </View>
     );
   }
 

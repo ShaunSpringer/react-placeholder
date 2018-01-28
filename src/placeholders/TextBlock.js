@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TextRow from './TextRow';
+import View from '../View';
 
 export default class TextBlock extends React.Component {
 
@@ -48,9 +49,9 @@ export default class TextBlock extends React.Component {
     const classes = ['text-block', className].filter(c => c).join(' ');
 
     return (
-      <div className={classes} style={{ ...style, width: '100%' }}>
+      <View className={classes} style={{ ...style, width: '100%' }}>
         {this.getRows()}
-      </div>
+      </View>
     );
   }
 

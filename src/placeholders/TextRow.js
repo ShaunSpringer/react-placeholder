@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import View from '../View';
 
 export default class TextRow extends React.Component {
 
@@ -31,7 +32,7 @@ export default class TextRow extends React.Component {
     const classes = ['text-row', className].filter(c => c).join(' ');
 
     return (
-      <div
+      <View
         className={classes}
         style={{ ...defaultStyles, ...style }}
       />
