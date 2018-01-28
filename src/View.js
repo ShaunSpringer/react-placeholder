@@ -1,9 +1,8 @@
 let target;
 
 if (navigator.product === 'ReactNative') {
-  import { View } from 'react-native';
-
-  target = View;
+  const rn = require('react-native');
+  target = rn.View;
 } else {
   target = div;
 }

@@ -32,7 +32,6 @@
     "url": "https://github.com/buildo/react-placeholder/issues"
   },
   "files": [
-    "lib",
     "index.d.ts"
   ],
   "homepage": "https://github.com/buildo/react-placeholder",
