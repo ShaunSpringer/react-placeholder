@@ -8,4 +8,4 @@ if (navigator.product === 'ReactNative') {
   target = div;
 }
 
-return target;
+export default target;
